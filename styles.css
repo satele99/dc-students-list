@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,100&family=Roboto:wght@100;400&display=swap'); 
+body {
+    font-family: 'Lato', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+} 
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+.left-section {
+    width: 50%;
+}
+.right-section {
+    width: 50%;
+    text-align: center;
+}
+.groups {
+    display: flex;
+    justify-content: center;
+    gap: 3.5px;
+}
+.students {
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+    width: 50%;
+} 
+.student-cards {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid black;
+} 
+.cards {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.remove-button {
+    border: 1.8px solid black;
+    background: none;
+    margin-left: 10px;
+} 
+.remove-button:hover {
+    cursor: pointer;
+}
