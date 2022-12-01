@@ -6,25 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student List</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Digital Craft 10-2022 CoHort</h1>
         <ul>
-            <li><button>Add Students</button></li>
-            <li><button>Clear</button></li>
+            <li><button id="add-students">Add Students</button></li>
+            <li><button id="clear-students">Clear</button></li>
         </ul>
     </header>
     <main>
         <section class="left-section">
             <div class="groups">
-                Add Students:<input type="text" id="student-input" placeholder="Enter Student Names"/> <input id="student-submit" type="submit">
+                Add Students:<input type="text" id="student-input" placeholder="Enter Student Names"/> <input id="student-submit" type="submit" onclick="addNames()">
             </div>
-            <div class="students">
-                <div class="student-cards">
-                    <div class="cards"><button class="remove-button">X</button><p>Amir</p></div>
-                </div>
+            <h2>Students</h2>
+            <div class="students" id="students">
+                <!-- <div class="student-cards">
+                    <div class="cards"><button class="remove-button" id="remove-button">X</button><p id="div-p">Amir</p></div>
+                </div> -->
             </div>
         </section>
         <section class="right-section">
@@ -34,6 +35,10 @@
             <h2>Groups</h2>
         </section>
     </main>
+    <section class="late-section">
+        <h2>Late Students</h2>
+        <div class="late" id="late"></div>
+    </section>
     
 </body>
 </html>
